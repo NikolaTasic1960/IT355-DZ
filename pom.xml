@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.it355</groupId>
-    <artifactId>IT355-DZ01-NikolaTasic1960</artifactId>
+    <artifactId>IT355-DZ-NikolaTasic1960</artifactId>
     <version>1.0</version>
     <packaging>war</packaging>
 
-    <name>IT355-DZ01-NikolaTasic1960</name>
+    <name>IT355-DZ-NikolaTasic1960</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
