@@ -1,9 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<html>
-    <head>
-        <title>IT355</title>
-    </head>
-    <body>
-        <h2>${poruka}</h2>
-    </body>
-</html>
+
+<jsp:include page="header.jsp" />
+
+        <h3>${poruka}</h3>
+
+<jsp:include page="footer.jsp" />

@@ -1,11 +1,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Prikaz</title>
-    </head>
-    <body>
+
+<jsp:include page="header.jsp" />
+
         <h2>Informacije o komponenti</h2>
         <table>
             <tr>
@@ -25,7 +21,5 @@
                 <td>${cena}</td>
             </tr>
         </table>
-    </body>
-</html>
-</body>
-</html>
+
+<jsp:include page="footer.jsp" />
