@@ -42,6 +42,21 @@ public class ZdravoController {
         return model;
     }
     
+    @RequestMapping(value = "/login", method = RequestMethod.POST)
+    public String postLogin(){
+    	return "login";
+    }
+    
+    @RequestMapping(value = "/logovanje_uspesno", method = RequestMethod.GET)
+    public String logoganje_uspesno(){
+    	return "logovanje_uspesno";
+    }
+    
+    @RequestMapping(value = "/logovanje_neuspesno", method = RequestMethod.GET)
+    public String logoganje_neuspesno(){
+    	return "logovanje_neuspesno";
+    }
+    
     @RequestMapping(value = "/403", method = RequestMethod.GET)
     public ModelAndView accesssDenied() {
         ModelAndView model = new ModelAndView();

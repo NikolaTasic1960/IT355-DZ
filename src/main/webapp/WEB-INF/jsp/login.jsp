@@ -20,6 +20,19 @@
     <c:if test="${not empty msg}">
         <div class="msg">${msg}</div>
     </c:if>
+    
+    <form method="post" class="col-md-8 col-md-offset-2" action="${flowExecutionUrl}">
+
+		<input type="hidden" name="_eventId" value="performLogin"> 
+		<input type="hidden" name="_flowExecutionKey" value="${flowExecutionKey}" />
+
+		<input type="text" name="userName" maxlength="40"><br> 
+		<input type="password" name="password" maxlength="40">
+		<input type="submit" value="Login" />
+
+	</form>
+    
+    <!-- 
     <form name='loginForm' class="col-md-8 col-md-offset-2"
           action="<c:url value='/j_spring_security_check'/>" method='POST'>
         <table>
@@ -40,6 +53,7 @@
         <input type="hidden" name="${_csrf.parameterName}"
                value="${_csrf.token}" />
     </form>
+    -->
 </body>
 </html>
 
