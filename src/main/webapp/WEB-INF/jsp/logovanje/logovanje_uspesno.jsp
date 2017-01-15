@@ -8,7 +8,7 @@
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <body>
-    	<jsp:include page="header.jsp"></jsp:include>
+    	<jsp:include page="../header.jsp"></jsp:include>
 <h1>Logovanje uspesno</h1>
 </head>
 <body>Dobrodosli ${loginBean.userName}!!

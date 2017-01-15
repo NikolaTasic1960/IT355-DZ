@@ -12,7 +12,7 @@
     	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
     <body onload='document.loginForm.username.focus();'>
-        <jsp:include page="header.jsp"></jsp:include>
+        <jsp:include page="../header.jsp"></jsp:include>
         <h1 style="margin-left:265px;">Uloguj se:</h1>
     <c:if test="${not empty error}">
         <div class="error">${error}</div>

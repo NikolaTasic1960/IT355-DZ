@@ -6,7 +6,7 @@
 <head>
 
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-	<title>Dodaj komponentu</title>
+	<title>Izmeni komponentu</title>
 	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.1/css/bootstrap-select.min.css"/>
@@ -23,44 +23,44 @@
 	<div class="container">
 		<div class="row">
 		
-		<form action="<spring:url value="/komponenta/dodaj"/>" method="post" class="col-md-8 col-md-offset-2">
+		<form action="<spring:url value="/komponenta/${komponenta.id}/izmeni"/>" method="post" class="col-md-8 col-md-offset-2">
 		
 			<div class="form-group">
 				<label for="komponenta-naziv">Naziv</label>
-				<input type="text" id="komponenta-naziv" class="form-control" name="naziv"/>
+				<input type="text" id="komponenta-naziv" class="form-control" name="naziv" value="${komponenta.naziv}"/>
 			</div>
 			
-			<div class="form-group">
+			<div lass="form-group">
 				<label for="kategorija">Kategorija</label><br>
 				<select name="kategorija" class="selectpicker">
-					<option value="" selected disabled>Odaberite kategoriju</option>
+					<option value="${komponenta.kategorija}" selected>${komponenta.kategorija}</option>
 					<option value="Procesor">Procesor</option>
 					<option value="Napajanje">Napajanje</option>
 					<option value="RAM">RAM</option>
-					<option value="Maticna ploca">Matična ploča</option>
-					<option value="Graficka kartica">Grafička kartica</option>
+					<option value="Maticna ploca">Maticna ploča</option>
+					<option value="Graficka kartica">Grafic�ka kartica</option>
 					<option value="Monitor">Monitor</option>
 					<option value="Tastatura">Tastatura</option>
-					<option value="Mis">Miš</option>
+					<option value="Mis">Mis</option>
 				</select>
 			</div>
 			
 			<div class="form-group">
 				<label for="proizvodjac">Proizvođač</label>
-				<input type="text" id="proizvodjac" class="form-control" name="proizvodjac"/>
+				<input type="text" id="proizvodjac" class="form-control" name="proizvodjac" value="${komponenta.proizvodjac}"/>
 			</div>
 			
 			<div class="form-group">
 				<label for="cena">Cena</label>
-				<input type="text" id="cena" class="form-control" name="cena"/>
+				<input type="text" id="cena" class="form-control" name="cena" value="${komponenta.cena}"/>
 			</div>
 			
 			<div class="form-group">
 				<label for="opis">Opis</label>
-				<textarea id="opis" class="form-control" rows="3" name="opis"></textarea>
+				<textarea id="opis" class="form-control" rows="3" name="opis">${komponenta.opis}</textarea>
 			</div>
 			
-			<button type="submit" class="btn btn-default">Dodaj</button>
+			<button type="submit" class="btn btn-default">Sacuvaj izmene</button>
 			<button type="button" class="btn btn-default" onClick="history.go(-1);return true;">Nazad</button>
 			
 		</form>
